@@ -1,0 +1,97 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+cachedir: /home/mei/ros/ros2_ws/build/ros2/.pytest_cache
+rootdir: /home/mei/ros/ros2_ws/src/ros2
+plugins: ament-lint-0.17.5, launch-testing-ros-0.26.13, ament-copyright-0.17.5, ament-pep257-0.17.5, launch-testing-3.4.12, ament-xmllint-0.17.5, ament-flake8-0.17.5, colcon-core-0.21.3, cov-4.1.0
+collected 3 items
+
+test/test_copyright.py s                                                 [ 33%]
+test/test_flake8.py F                                                    [ 66%]
+test/test_pep257.py .                                                    [100%]
+
+=================================== FAILURES ===================================
+_________________________________ test_flake8 __________________________________
+test/test_flake8.py:23: in test_flake8
+    assert rc == 0, \
+E   AssertionError: Found 10 code style errors / warnings:
+E     ./ros2/Publisher.py:4:1: I100 Import statements are in the wrong order. 'from rclpy.qos import HistoryPolicy' should be before 'from rclpy.qos import ReliabilityPolicy'
+E     ./ros2/Publisher.py:5:1: I100 Import statements are in the wrong order. 'from rclpy.qos import DurabilityPolicy' should be before 'from rclpy.qos import HistoryPolicy'
+E     ./ros2/Publisher.py:6:1: I100 Import statements are in the wrong order. 'from rclpy.node import Node' should be before 'from rclpy.qos import DurabilityPolicy'
+E     ./ros2/Publisher.py:9:1: E302 expected 2 blank lines, found 1
+E     ./ros2/Publisher.py:12:1: W293 blank line contains whitespace
+E     ./ros2/Publisher.py:21:20: W291 trailing whitespace
+E     ./ros2/Publisher.py:33:17: E225 missing whitespace around operator
+E     ./ros2/Publisher.py:36:1: E302 expected 2 blank lines, found 1
+E     ./ros2/Publisher.py:43:1: E305 expected 2 blank lines after class or function definition, found 1
+E     ./ros2/Publisher.py:45:1: W391 blank line at end of file
+E   assert 1 == 0
+----------------------------- Captured stdout call -----------------------------
+
+./ros2/Publisher.py:4:1: I100 Import statements are in the wrong order. 'from rclpy.qos import HistoryPolicy' should be before 'from rclpy.qos import ReliabilityPolicy'
+from rclpy.qos import HistoryPolicy
+^
+
+./ros2/Publisher.py:5:1: I100 Import statements are in the wrong order. 'from rclpy.qos import DurabilityPolicy' should be before 'from rclpy.qos import HistoryPolicy'
+from rclpy.qos import DurabilityPolicy
+^
+
+./ros2/Publisher.py:6:1: I100 Import statements are in the wrong order. 'from rclpy.node import Node' should be before 'from rclpy.qos import DurabilityPolicy'
+from rclpy.node import Node
+^
+
+./ros2/Publisher.py:9:1: E302 expected 2 blank lines, found 1
+class Publisher(Node):
+^
+
+./ros2/Publisher.py:12:1: W293 blank line contains whitespace
+       
+^
+
+./ros2/Publisher.py:21:20: W291 trailing whitespace
+            String, 
+                   ^
+
+./ros2/Publisher.py:33:17: E225 missing whitespace around operator
+        msg.data= 'robot'
+                ^
+
+./ros2/Publisher.py:36:1: E302 expected 2 blank lines, found 1
+def main(args=None):
+^
+
+./ros2/Publisher.py:43:1: E305 expected 2 blank lines after class or function definition, found 1
+if __name__ == '__main__':
+^
+
+./ros2/Publisher.py:45:1: W391 blank line at end of file
+
+^
+
+1     E225 missing whitespace around operator
+2     E302 expected 2 blank lines, found 1
+1     E305 expected 2 blank lines after class or function definition, found 1
+3     I100 Import statements are in the wrong order. 'from rclpy.qos import HistoryPolicy' should be before 'from rclpy.qos import ReliabilityPolicy'
+1     W291 trailing whitespace
+1     W293 blank line contains whitespace
+1     W391 blank line at end of file
+
+7 files checked
+10 errors
+
+'E'-type errors: 4
+'I'-type errors: 3
+'W'-type errors: 3
+
+Checked files:
+
+* ./setup.py
+* ./ros2/__init__.py
+* ./ros2/Suscribe.py
+* ./ros2/Publisher.py
+* ./test/test_copyright.py
+* ./test/test_pep257.py
+* ./test/test_flake8.py
+------- generated xml file: /home/mei/ros/ros2_ws/build/ros2/pytest.xml --------
+=========================== short test summary info ============================
+FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 10 code style...
+==================== 1 failed, 1 passed, 1 skipped in 0.91s ====================

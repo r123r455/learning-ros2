@@ -1,0 +1,22 @@
+[1.353s] Invoking command in '/home/mei/ros/ros2_ws/src/ros2': PYTHONPATH=/home/mei/ros/ros2_ws/build/ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mei/ros/ros2_ws/install/ros2/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros2 build --build-base /home/mei/ros/ros2_ws/build/ros2/build install --record /home/mei/ros/ros2_ws/build/ros2/install.log --install-scripts $base/lib/ros2 --single-version-externally-managed install_data
+[1.693s] running egg_info
+[1.713s] writing ../../build/ros2/ros2.egg-info/PKG-INFO
+[1.713s] writing dependency_links to ../../build/ros2/ros2.egg-info/dependency_links.txt
+[1.714s] writing entry points to ../../build/ros2/ros2.egg-info/entry_points.txt
+[1.715s] writing requirements to ../../build/ros2/ros2.egg-info/requires.txt
+[1.715s] writing top-level names to ../../build/ros2/ros2.egg-info/top_level.txt
+[1.760s] reading manifest file '../../build/ros2/ros2.egg-info/SOURCES.txt'
+[1.761s] writing manifest file '../../build/ros2/ros2.egg-info/SOURCES.txt'
+[1.762s] running build
+[1.762s] running build_py
+[1.762s] running install
+[1.769s] running install_lib
+[1.787s] running install_data
+[1.788s] running install_egg_info
+[1.809s] removing '/home/mei/ros/ros2_ws/install/ros2/lib/python3.12/site-packages/ros2-0.0.0-py3.12.egg-info' (and everything under it)
+[1.810s] Copying ../../build/ros2/ros2.egg-info to /home/mei/ros/ros2_ws/install/ros2/lib/python3.12/site-packages/ros2-0.0.0-py3.12.egg-info
+[1.812s] running install_scripts
+[1.984s] Installing node_kedua script to /home/mei/ros/ros2_ws/install/ros2/lib/ros2
+[1.984s] Installing node_pertama script to /home/mei/ros/ros2_ws/install/ros2/lib/ros2
+[1.985s] writing list of installed files to '/home/mei/ros/ros2_ws/build/ros2/install.log'
+[2.022s] Invoked command in '/home/mei/ros/ros2_ws/src/ros2' returned '0': PYTHONPATH=/home/mei/ros/ros2_ws/build/ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mei/ros/ros2_ws/install/ros2/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros2 build --build-base /home/mei/ros/ros2_ws/build/ros2/build install --record /home/mei/ros/ros2_ws/build/ros2/install.log --install-scripts $base/lib/ros2 --single-version-externally-managed install_data

@@ -1,0 +1,28 @@
+running egg_info
+writing ../../build/ros2/ros2.egg-info/PKG-INFO
+writing dependency_links to ../../build/ros2/ros2.egg-info/dependency_links.txt
+writing entry points to ../../build/ros2/ros2.egg-info/entry_points.txt
+writing requirements to ../../build/ros2/ros2.egg-info/requires.txt
+writing top-level names to ../../build/ros2/ros2.egg-info/top_level.txt
+reading manifest file '../../build/ros2/ros2.egg-info/SOURCES.txt'
+writing manifest file '../../build/ros2/ros2.egg-info/SOURCES.txt'
+running build
+running build_py
+copying ros2/action_robot.py -> /home/mei/ros/ros2_ws/build/ros2/build/lib/ros2
+running install
+running install_lib
+copying /home/mei/ros/ros2_ws/build/ros2/build/lib/ros2/action_robot.py -> /home/mei/ros/ros2_ws/install/ros2/lib/python3.12/site-packages/ros2
+byte-compiling /home/mei/ros/ros2_ws/install/ros2/lib/python3.12/site-packages/ros2/action_robot.py to action_robot.cpython-312.pyc
+running install_data
+running install_egg_info
+removing '/home/mei/ros/ros2_ws/install/ros2/lib/python3.12/site-packages/ros2-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/ros2/ros2.egg-info to /home/mei/ros/ros2_ws/install/ros2/lib/python3.12/site-packages/ros2-0.0.0-py3.12.egg-info
+running install_scripts
+Installing action_robot script to /home/mei/ros/ros2_ws/install/ros2/lib/ros2
+Installing fsm_robot script to /home/mei/ros/ros2_ws/install/ros2/lib/ros2
+Installing lidar_rx script to /home/mei/ros/ros2_ws/install/ros2/lib/ros2
+Installing lidar_tr script to /home/mei/ros/ros2_ws/install/ros2/lib/ros2
+Installing node_kedua script to /home/mei/ros/ros2_ws/install/ros2/lib/ros2
+Installing node_motor script to /home/mei/ros/ros2_ws/install/ros2/lib/ros2
+Installing node_pertama script to /home/mei/ros/ros2_ws/install/ros2/lib/ros2
+writing list of installed files to '/home/mei/ros/ros2_ws/build/ros2/install.log'

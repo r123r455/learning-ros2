@@ -1,0 +1,13 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+cachedir: /home/mei/ros/ros2_ws/build/ros2/.pytest_cache
+rootdir: /home/mei/ros/ros2_ws/src/ros2
+plugins: ament-lint-0.17.5, launch-testing-ros-0.26.13, ament-copyright-0.17.5, ament-pep257-0.17.5, launch-testing-3.4.12, ament-xmllint-0.17.5, ament-flake8-0.17.5, colcon-core-0.21.3, cov-4.1.0
+collected 3 items
+
+test/test_copyright.py s                                                 [ 33%]
+test/test_flake8.py .                                                    [ 66%]
+test/test_pep257.py .                                                    [100%]
+
+------- generated xml file: /home/mei/ros/ros2_ws/build/ros2/pytest.xml --------
+========================= 2 passed, 1 skipped in 0.51s =========================

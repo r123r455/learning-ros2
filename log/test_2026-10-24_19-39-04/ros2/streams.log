@@ -1,0 +1,181 @@
+[0.601s] Invoking command in '/home/mei/ros/ros2_ws/src/ros2': AMENT_PREFIX_PATH=/home/mei/ros/ros2_ws/install/ros2:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/mei/ros/ros2_ws/build/ros2/pytest.xml --junit-prefix=ros2 -o cache_dir=/home/mei/ros/ros2_ws/build/ros2/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/mei/ros/ros2_ws/install/ros2/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[1.594s] ============================= test session starts ==============================
+[1.594s] platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+[1.594s] cachedir: /home/mei/ros/ros2_ws/build/ros2/.pytest_cache
+[1.594s] rootdir: /home/mei/ros/ros2_ws/src/ros2
+[1.594s] plugins: ament-lint-0.17.5, launch-testing-ros-0.26.13, ament-copyright-0.17.5, ament-pep257-0.17.5, launch-testing-3.4.12, ament-xmllint-0.17.5, ament-flake8-0.17.5, colcon-core-0.21.3, cov-4.1.0
+[1.595s] collected 3 items
+[1.595s] 
+[1.600s] test/test_copyright.py s                                                 [ 33%]
+[1.859s] test/test_flake8.py F                                                    [ 66%]
+[1.884s] test/test_pep257.py .                                                    [100%]
+[1.885s] 
+[1.885s] =================================== FAILURES ===================================
+[1.885s] _________________________________ test_flake8 __________________________________
+[1.885s] test/test_flake8.py:23: in test_flake8
+[1.885s]     assert rc == 0, \
+[1.885s] E   AssertionError: Found 26 code style errors / warnings:
+[1.885s] E     ./ros2/Publisher.py:4:1: I100 Import statements are in the wrong order. 'from rclpy.qos import HistoryPolicy' should be before 'from rclpy.qos import ReliabilityPolicy'
+[1.885s] E     ./ros2/Publisher.py:5:1: I100 Import statements are in the wrong order. 'from rclpy.qos import DurabilityPolicy' should be before 'from rclpy.qos import HistoryPolicy'
+[1.886s] E     ./ros2/Publisher.py:6:1: I100 Import statements are in the wrong order. 'from rclpy.node import Node' should be before 'from rclpy.qos import DurabilityPolicy'
+[1.886s] E     ./ros2/Publisher.py:9:1: E302 expected 2 blank lines, found 1
+[1.886s] E     ./ros2/Publisher.py:12:1: W293 blank line contains whitespace
+[1.887s] E     ./ros2/Publisher.py:21:20: W291 trailing whitespace
+[1.887s] E     ./ros2/Publisher.py:33:17: E225 missing whitespace around operator
+[1.887s] E     ./ros2/Publisher.py:36:1: E302 expected 2 blank lines, found 1
+[1.888s] E     ./ros2/Publisher.py:43:1: E305 expected 2 blank lines after class or function definition, found 1
+[1.888s] E     ./ros2/Publisher.py:45:1: W391 blank line at end of file
+[1.888s] E     ./ros2/Suscribe.py:4:1: I100 Import statements are in the wrong order. 'from rclpy.qos import HistoryPolicy' should be before 'from rclpy.qos import ReliabilityPolicy'
+[1.888s] E     ./ros2/Suscribe.py:5:1: I100 Import statements are in the wrong order. 'from rclpy.qos import DurabilityPolicy' should be before 'from rclpy.qos import HistoryPolicy'
+[1.888s] E     ./ros2/Suscribe.py:6:1: I100 Import statements are in the wrong order. 'from rclpy.node import Node' should be before 'from rclpy.qos import DurabilityPolicy'
+[1.889s] E     ./ros2/Suscribe.py:9:1: E302 expected 2 blank lines, found 1
+[1.889s] E     ./ros2/Suscribe.py:12:1: W293 blank line contains whitespace
+[1.889s] E     ./ros2/Suscribe.py:14:9: E303 too many blank lines (2)
+[1.889s] E     ./ros2/Suscribe.py:15:24: E251 unexpected spaces around keyword / parameter equals
+[1.889s] E     ./ros2/Suscribe.py:15:26: E251 unexpected spaces around keyword / parameter equals
+[1.889s] E     ./ros2/Suscribe.py:16:20: E251 unexpected spaces around keyword / parameter equals
+[1.890s] E     ./ros2/Suscribe.py:16:22: E251 unexpected spaces around keyword / parameter equals
+[1.890s] E     ./ros2/Suscribe.py:17:23: E251 unexpected spaces around keyword / parameter equals
+[1.890s] E     ./ros2/Suscribe.py:17:25: E251 unexpected spaces around keyword / parameter equals
+[1.890s] E     ./ros2/Suscribe.py:18:18: E251 unexpected spaces around keyword / parameter equals
+[1.890s] E     ./ros2/Suscribe.py:18:20: E251 unexpected spaces around keyword / parameter equals
+[1.891s] E     ./ros2/Suscribe.py:33:1: E302 expected 2 blank lines, found 1
+[1.891s] E     ./ros2/Suscribe.py:43:1: W391 blank line at end of file
+[1.891s] E   assert 1 == 0
+[1.891s] ----------------------------- Captured stdout call -----------------------------
+[1.891s] 
+[1.891s] ./ros2/Publisher.py:4:1: I100 Import statements are in the wrong order. 'from rclpy.qos import HistoryPolicy' should be before 'from rclpy.qos import ReliabilityPolicy'
+[1.891s] from rclpy.qos import HistoryPolicy
+[1.891s] ^
+[1.891s] 
+[1.892s] ./ros2/Publisher.py:5:1: I100 Import statements are in the wrong order. 'from rclpy.qos import DurabilityPolicy' should be before 'from rclpy.qos import HistoryPolicy'
+[1.892s] from rclpy.qos import DurabilityPolicy
+[1.892s] ^
+[1.892s] 
+[1.892s] ./ros2/Publisher.py:6:1: I100 Import statements are in the wrong order. 'from rclpy.node import Node' should be before 'from rclpy.qos import DurabilityPolicy'
+[1.892s] from rclpy.node import Node
+[1.892s] ^
+[1.892s] 
+[1.892s] ./ros2/Publisher.py:9:1: E302 expected 2 blank lines, found 1
+[1.892s] class Publisher(Node):
+[1.892s] ^
+[1.893s] 
+[1.893s] ./ros2/Publisher.py:12:1: W293 blank line contains whitespace
+[1.893s]        
+[1.893s] ^
+[1.893s] 
+[1.893s] ./ros2/Publisher.py:21:20: W291 trailing whitespace
+[1.893s]             String, 
+[1.893s]                    ^
+[1.894s] 
+[1.894s] ./ros2/Publisher.py:33:17: E225 missing whitespace around operator
+[1.894s]         msg.data= 'robot'
+[1.895s]                 ^
+[1.895s] 
+[1.895s] ./ros2/Publisher.py:36:1: E302 expected 2 blank lines, found 1
+[1.895s] def main(args=None):
+[1.896s] ^
+[1.896s] 
+[1.896s] ./ros2/Publisher.py:43:1: E305 expected 2 blank lines after class or function definition, found 1
+[1.896s] if __name__ == '__main__':
+[1.897s] ^
+[1.897s] 
+[1.897s] ./ros2/Publisher.py:45:1: W391 blank line at end of file
+[1.897s] 
+[1.897s] ^
+[1.898s] 
+[1.898s] ./ros2/Suscribe.py:4:1: I100 Import statements are in the wrong order. 'from rclpy.qos import HistoryPolicy' should be before 'from rclpy.qos import ReliabilityPolicy'
+[1.898s] from rclpy.qos import HistoryPolicy
+[1.898s] ^
+[1.899s] 
+[1.899s] ./ros2/Suscribe.py:5:1: I100 Import statements are in the wrong order. 'from rclpy.qos import DurabilityPolicy' should be before 'from rclpy.qos import HistoryPolicy'
+[1.899s] from rclpy.qos import DurabilityPolicy
+[1.899s] ^
+[1.899s] 
+[1.900s] ./ros2/Suscribe.py:6:1: I100 Import statements are in the wrong order. 'from rclpy.node import Node' should be before 'from rclpy.qos import DurabilityPolicy'
+[1.900s] from rclpy.node import Node
+[1.900s] ^
+[1.900s] 
+[1.901s] ./ros2/Suscribe.py:9:1: E302 expected 2 blank lines, found 1
+[1.901s] class Suscribe(Node):
+[1.901s] ^
+[1.901s] 
+[1.902s] ./ros2/Suscribe.py:12:1: W293 blank line contains whitespace
+[1.902s]         
+[1.902s] ^
+[1.902s] 
+[1.902s] ./ros2/Suscribe.py:14:9: E303 too many blank lines (2)
+[1.903s]         qos_self = QoSProfile(
+[1.903s]         ^
+[1.903s] 
+[1.903s] ./ros2/Suscribe.py:15:24: E251 unexpected spaces around keyword / parameter equals
+[1.903s]             reliability = ReliabilityPolicy.BEST_AVAILABLE,
+[1.903s]                        ^
+[1.903s] 
+[1.903s] ./ros2/Suscribe.py:15:26: E251 unexpected spaces around keyword / parameter equals
+[1.903s]             reliability = ReliabilityPolicy.BEST_AVAILABLE,
+[1.904s]                          ^
+[1.904s] 
+[1.904s] ./ros2/Suscribe.py:16:20: E251 unexpected spaces around keyword / parameter equals
+[1.904s]             history = HistoryPolicy.KEEP_LAST,
+[1.904s]                    ^
+[1.904s] 
+[1.904s] ./ros2/Suscribe.py:16:22: E251 unexpected spaces around keyword / parameter equals
+[1.904s]             history = HistoryPolicy.KEEP_LAST,
+[1.905s]                      ^
+[1.905s] 
+[1.905s] ./ros2/Suscribe.py:17:23: E251 unexpected spaces around keyword / parameter equals
+[1.905s]             durability = DurabilityPolicy.VOLATILE,
+[1.906s]                       ^
+[1.906s] 
+[1.906s] ./ros2/Suscribe.py:17:25: E251 unexpected spaces around keyword / parameter equals
+[1.907s]             durability = DurabilityPolicy.VOLATILE,
+[1.907s]                         ^
+[1.907s] 
+[1.907s] ./ros2/Suscribe.py:18:18: E251 unexpected spaces around keyword / parameter equals
+[1.907s]             depth = 5,
+[1.907s]                  ^
+[1.907s] 
+[1.907s] ./ros2/Suscribe.py:18:20: E251 unexpected spaces around keyword / parameter equals
+[1.907s]             depth = 5,
+[1.908s]                    ^
+[1.908s] 
+[1.908s] ./ros2/Suscribe.py:33:1: E302 expected 2 blank lines, found 1
+[1.908s] def main(args=None):
+[1.909s] ^
+[1.909s] 
+[1.909s] ./ros2/Suscribe.py:43:1: W391 blank line at end of file
+[1.909s] 
+[1.909s] ^
+[1.909s] 
+[1.909s] 1     E225 missing whitespace around operator
+[1.910s] 8     E251 unexpected spaces around keyword / parameter equals
+[1.910s] 4     E302 expected 2 blank lines, found 1
+[1.910s] 1     E303 too many blank lines (2)
+[1.911s] 1     E305 expected 2 blank lines after class or function definition, found 1
+[1.911s] 6     I100 Import statements are in the wrong order. 'from rclpy.qos import HistoryPolicy' should be before 'from rclpy.qos import ReliabilityPolicy'
+[1.911s] 1     W291 trailing whitespace
+[1.911s] 2     W293 blank line contains whitespace
+[1.911s] 2     W391 blank line at end of file
+[1.911s] 
+[1.911s] 7 files checked
+[1.911s] 26 errors
+[1.912s] 
+[1.912s] 'E'-type errors: 15
+[1.912s] 'I'-type errors: 6
+[1.912s] 'W'-type errors: 5
+[1.913s] 
+[1.913s] Checked files:
+[1.913s] 
+[1.913s] * ./setup.py
+[1.913s] * ./ros2/__init__.py
+[1.913s] * ./ros2/Suscribe.py
+[1.913s] * ./ros2/Publisher.py
+[1.913s] * ./test/test_copyright.py
+[1.913s] * ./test/test_pep257.py
+[1.913s] * ./test/test_flake8.py
+[1.914s] ------- generated xml file: /home/mei/ros/ros2_ws/build/ros2/pytest.xml --------
+[1.914s] =========================== short test summary info ============================
+[1.914s] FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 26 code style...
+[1.914s] ==================== 1 failed, 1 passed, 1 skipped in 0.52s ====================
+[2.000s] Invoked command in '/home/mei/ros/ros2_ws/src/ros2' returned '1': AMENT_PREFIX_PATH=/home/mei/ros/ros2_ws/install/ros2:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/mei/ros/ros2_ws/build/ros2/pytest.xml --junit-prefix=ros2 -o cache_dir=/home/mei/ros/ros2_ws/build/ros2/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/mei/ros/ros2_ws/install/ros2/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest

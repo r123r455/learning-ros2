@@ -1,0 +1,206 @@
+[0.000000] (-) TimerEvent: {}
+[0.000298] (ros2) JobQueued: {'identifier': 'ros2', 'dependencies': OrderedDict({'ros2': '/home/mei/ros/ros2_ws/install/ros2'})}
+[0.000716] (ros2) JobStarted: {'identifier': 'ros2'}
+[0.099786] (-) TimerEvent: {}
+[0.200189] (-) TimerEvent: {}
+[0.300519] (-) TimerEvent: {}
+[0.400823] (-) TimerEvent: {}
+[0.501134] (-) TimerEvent: {}
+[0.600659] (ros2) Command: {'cmd': ['/usr/bin/python3', '-m', 'pytest'], 'cwd': '/home/mei/ros/ros2_ws/src/ros2', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'AUTO_LOCAL_ROUTING': 'false', 'RUBBER_DUCK_AGENT': 'true', 'COPILOT_EXP_COPILOT_CLI_EXECUTION_SUBAGENT': 'false', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'AI_AGENT': 'github_copilot_vscode_agent', 'USER': 'mei', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIT_ASKPASS': '', 'CLAUDE_AGENT_SDK_VERSION': '0.3.281', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mei', 'GIT_CONFIG_COUNT': '3', 'COPILOT_CLI_RUN_AS_NODE': '1', 'ROS_PYTHON_VERSION': '3', 'COPILOT_CLI': '1', 'USE_TGREP': 'false', 'SSH_ASKPASS': '', 'ANTHROPIC_ADVISOR': 'false', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'USE_BUILTIN_RIPGREP': 'false', 'COPILOT_HOME': '/home/mei/.copilot', 'GIT_OPTIONAL_LOCKS': '0', 'WAYLAND_DISPLAY': 'wayland-0', 'GCM_INTERACTIVE': 'Never', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mei', 'NAME': 'HYPE', 'WSL_INTEROP': '/run/WSL/34338_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'SKILL_CHAR_BUDGET': '30000', 'TERM': 'xterm-256color', 'WINML_LOCAL_MODELS': 'false', 'GIT_CONFIG_VALUE_0': 'explicit', 'PATH': '/home/mei/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/usr/lib/linux-tools/6.18.54.1-microsoft-standard-WSL2/bin:/mnt/c/Python314/Scripts/:/mnt/c/Python314/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Matlab/v911/runtime/win64:/mnt/c/Program Files/m/v911/runtime/win64:/mnt/c/Program Files/Polyspace/R2021a/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/nodejs/:/mnt/d/android sdk/platform-tools:/mnt/d/android sdk/emulator:/mnt/d/android sdk/tools:/mnt/d/android sdk/tools/bin:/mnt/d/matlab/bin:/mnt/d/matlab/bin/win64:/mnt/d/WinSCP/:/mnt/c/Program Files/Go/bin:/mnt/c/msys64/ucrt64/bin:/mnt/d/Git/cmd:/mnt/c/Program Files/WSL/:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/:/mnt/c/Users/HYPE/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/HYPE/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/HYPE/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/HYPE/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/HYPE/AppData/Roaming/npm:/mnt/c/Users/HYPE/go/bin:/mnt/c/Users/HYPE/AppData/Local/Programs/Microsoft VS Code/bin/copilot-shim:/snap/bin:/home/mei/.vscode-server/cli/servers/Stable-e646868227c3e3a9e3f24277c8c7220be42c0be7/server/node_modules/@vscode/ripgrep-universal/bin/linux-x64', 'GIT_CONFIG_VALUE_1': 'never', 'CLAUDE_CODE_DISABLE_PRECOMPACT_SKIP': '1', 'GIT_CONFIG_VALUE_2': 'false', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'NoDefaultCurrentDirectoryInExePath': '1', 'LANG': 'C.UTF-8', 'PERF_EXEC_PATH': '/usr/lib/linux-tools/6.18.54.1-microsoft-standard-WSL2/libexec/perf-core', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/mei/ros/ros2_ws/install/ros2:/opt/ros/jazzy', 'COPILOT_AGENT_SESSION_ID': 'df74a1be-9c73-4b21-ba11-ca6d357f2ea8', 'SHELL': '/bin/bash', 'COPILOT_RUNTIME_PROCESS_FILE_LOGGING': '1', 'GIT_TERMINAL_PROMPT': '0', 'GIT_CONFIG_KEY_0': 'safe.bareRepository', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GIT_CONFIG_KEY_1': 'credential.interactive', 'GIT_CONFIG_KEY_2': 'core.fsmonitor', 'COPILOT_MCP_APPS': 'true', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/mei/ros/ros2_ws/build/ros2', 'AUTO_APPROVAL': 'true', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'COPILOT_ENABLE_BUILTIN_GITHUB_MCP': 'true', 'PYTHONPATH': '/home/mei/ros/ros2_ws/install/ros2/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_sim_vendor/lib/python:/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_transport_vendor/lib/python:/opt/ros/jazzy/opt/gz_msgs_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COPILOT_EXP_COPILOT_CLI_EXECUTION_SUBAGENT_MODEL': 'gpt-5.6-luna', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'COPILOT_CLI_ENABLED_FEATURE_FLAGS': 'SHELL_SPAWN_BACKEND', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'WSLENV': '', 'PYTHONDONTWRITEBYTECODE': '1', 'PYTEST_ADDOPTS': '--tb=short --junit-xml=/home/mei/ros/ros2_ws/build/ros2/pytest.xml --junit-prefix=ros2 -o cache_dir=/home/mei/ros/ros2_ws/build/ros2/.pytest_cache'}), 'shell': False}
+[0.602349] (-) TimerEvent: {}
+[0.702542] (-) TimerEvent: {}
+[0.802870] (-) TimerEvent: {}
+[0.903286] (-) TimerEvent: {}
+[1.004083] (-) TimerEvent: {}
+[1.104972] (-) TimerEvent: {}
+[1.205402] (-) TimerEvent: {}
+[1.305848] (-) TimerEvent: {}
+[1.406428] (-) TimerEvent: {}
+[1.507234] (-) TimerEvent: {}
+[1.593657] (ros2) StdoutLine: {'line': b'============================= test session starts ==============================\n'}
+[1.594630] (ros2) StdoutLine: {'line': b'platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0\n'}
+[1.594888] (ros2) StdoutLine: {'line': b'cachedir: /home/mei/ros/ros2_ws/build/ros2/.pytest_cache\n'}
+[1.595056] (ros2) StdoutLine: {'line': b'rootdir: /home/mei/ros/ros2_ws/src/ros2\n'}
+[1.595142] (ros2) StdoutLine: {'line': b'plugins: ament-lint-0.17.5, launch-testing-ros-0.26.13, ament-copyright-0.17.5, ament-pep257-0.17.5, launch-testing-3.4.12, ament-xmllint-0.17.5, ament-flake8-0.17.5, colcon-core-0.21.3, cov-4.1.0\n'}
+[1.595280] (ros2) StdoutLine: {'line': b'collected 3 items\n'}
+[1.595409] (ros2) StdoutLine: {'line': b'\n'}
+[1.600433] (ros2) StdoutLine: {'line': b'test/test_copyright.py s                                                 [ 33%]\n'}
+[1.607748] (-) TimerEvent: {}
+[1.708706] (-) TimerEvent: {}
+[1.810455] (-) TimerEvent: {}
+[1.858890] (ros2) StdoutLine: {'line': b'test/test_flake8.py F                                                    [ 66%]\n'}
+[1.884991] (ros2) StdoutLine: {'line': b'test/test_pep257.py .                                                    [100%]\n'}
+[1.885269] (ros2) StdoutLine: {'line': b'\n'}
+[1.885392] (ros2) StdoutLine: {'line': b'=================================== FAILURES ===================================\n'}
+[1.885530] (ros2) StdoutLine: {'line': b'_________________________________ test_flake8 __________________________________\n'}
+[1.885668] (ros2) StdoutLine: {'line': b'test/test_flake8.py:23: in test_flake8\n'}
+[1.885831] (ros2) StdoutLine: {'line': b'    assert rc == 0, \\\n'}
+[1.885931] (ros2) StdoutLine: {'line': b'E   AssertionError: Found 26 code style errors / warnings:\n'}
+[1.886003] (ros2) StdoutLine: {'line': b"E     ./ros2/Publisher.py:4:1: I100 Import statements are in the wrong order. 'from rclpy.qos import HistoryPolicy' should be before 'from rclpy.qos import ReliabilityPolicy'\n"}
+[1.886110] (ros2) StdoutLine: {'line': b"E     ./ros2/Publisher.py:5:1: I100 Import statements are in the wrong order. 'from rclpy.qos import DurabilityPolicy' should be before 'from rclpy.qos import HistoryPolicy'\n"}
+[1.886275] (ros2) StdoutLine: {'line': b"E     ./ros2/Publisher.py:6:1: I100 Import statements are in the wrong order. 'from rclpy.node import Node' should be before 'from rclpy.qos import DurabilityPolicy'\n"}
+[1.886464] (ros2) StdoutLine: {'line': b'E     ./ros2/Publisher.py:9:1: E302 expected 2 blank lines, found 1\n'}
+[1.887028] (ros2) StdoutLine: {'line': b'E     ./ros2/Publisher.py:12:1: W293 blank line contains whitespace\n'}
+[1.887334] (ros2) StdoutLine: {'line': b'E     ./ros2/Publisher.py:21:20: W291 trailing whitespace\n'}
+[1.887853] (ros2) StdoutLine: {'line': b'E     ./ros2/Publisher.py:33:17: E225 missing whitespace around operator\n'}
+[1.888177] (ros2) StdoutLine: {'line': b'E     ./ros2/Publisher.py:36:1: E302 expected 2 blank lines, found 1\n'}
+[1.888287] (ros2) StdoutLine: {'line': b'E     ./ros2/Publisher.py:43:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[1.888433] (ros2) StdoutLine: {'line': b'E     ./ros2/Publisher.py:45:1: W391 blank line at end of file\n'}
+[1.888588] (ros2) StdoutLine: {'line': b"E     ./ros2/Suscribe.py:4:1: I100 Import statements are in the wrong order. 'from rclpy.qos import HistoryPolicy' should be before 'from rclpy.qos import ReliabilityPolicy'\n"}
+[1.888866] (ros2) StdoutLine: {'line': b"E     ./ros2/Suscribe.py:5:1: I100 Import statements are in the wrong order. 'from rclpy.qos import DurabilityPolicy' should be before 'from rclpy.qos import HistoryPolicy'\n"}
+[1.889072] (ros2) StdoutLine: {'line': b"E     ./ros2/Suscribe.py:6:1: I100 Import statements are in the wrong order. 'from rclpy.node import Node' should be before 'from rclpy.qos import DurabilityPolicy'\n"}
+[1.889235] (ros2) StdoutLine: {'line': b'E     ./ros2/Suscribe.py:9:1: E302 expected 2 blank lines, found 1\n'}
+[1.889456] (ros2) StdoutLine: {'line': b'E     ./ros2/Suscribe.py:12:1: W293 blank line contains whitespace\n'}
+[1.889648] (ros2) StdoutLine: {'line': b'E     ./ros2/Suscribe.py:14:9: E303 too many blank lines (2)\n'}
+[1.889871] (ros2) StdoutLine: {'line': b'E     ./ros2/Suscribe.py:15:24: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.890064] (ros2) StdoutLine: {'line': b'E     ./ros2/Suscribe.py:15:26: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.890241] (ros2) StdoutLine: {'line': b'E     ./ros2/Suscribe.py:16:20: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.890343] (ros2) StdoutLine: {'line': b'E     ./ros2/Suscribe.py:16:22: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.890450] (ros2) StdoutLine: {'line': b'E     ./ros2/Suscribe.py:17:23: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.890557] (ros2) StdoutLine: {'line': b'E     ./ros2/Suscribe.py:17:25: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.890812] (ros2) StdoutLine: {'line': b'E     ./ros2/Suscribe.py:18:18: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.891219] (ros2) StdoutLine: {'line': b'E     ./ros2/Suscribe.py:18:20: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.891437] (ros2) StdoutLine: {'line': b'E     ./ros2/Suscribe.py:33:1: E302 expected 2 blank lines, found 1\n'}
+[1.891553] (ros2) StdoutLine: {'line': b'E     ./ros2/Suscribe.py:43:1: W391 blank line at end of file\n'}
+[1.891749] (ros2) StdoutLine: {'line': b'E   assert 1 == 0\n'}
+[1.891867] (ros2) StdoutLine: {'line': b'----------------------------- Captured stdout call -----------------------------\n'}
+[1.891943] (ros2) StdoutLine: {'line': b'\n'}
+[1.892015] (ros2) StdoutLine: {'line': b"./ros2/Publisher.py:4:1: I100 Import statements are in the wrong order. 'from rclpy.qos import HistoryPolicy' should be before 'from rclpy.qos import ReliabilityPolicy'\n"}
+[1.892092] (ros2) StdoutLine: {'line': b'from rclpy.qos import HistoryPolicy\n'}
+[1.892170] (ros2) StdoutLine: {'line': b'^\n'}
+[1.892276] (ros2) StdoutLine: {'line': b'\n'}
+[1.892357] (ros2) StdoutLine: {'line': b"./ros2/Publisher.py:5:1: I100 Import statements are in the wrong order. 'from rclpy.qos import DurabilityPolicy' should be before 'from rclpy.qos import HistoryPolicy'\n"}
+[1.892420] (ros2) StdoutLine: {'line': b'from rclpy.qos import DurabilityPolicy\n'}
+[1.892485] (ros2) StdoutLine: {'line': b'^\n'}
+[1.892546] (ros2) StdoutLine: {'line': b'\n'}
+[1.892612] (ros2) StdoutLine: {'line': b"./ros2/Publisher.py:6:1: I100 Import statements are in the wrong order. 'from rclpy.node import Node' should be before 'from rclpy.qos import DurabilityPolicy'\n"}
+[1.892804] (ros2) StdoutLine: {'line': b'from rclpy.node import Node\n'}
+[1.892889] (ros2) StdoutLine: {'line': b'^\n'}
+[1.892969] (ros2) StdoutLine: {'line': b'\n'}
+[1.893061] (ros2) StdoutLine: {'line': b'./ros2/Publisher.py:9:1: E302 expected 2 blank lines, found 1\n'}
+[1.893146] (ros2) StdoutLine: {'line': b'class Publisher(Node):\n'}
+[1.893231] (ros2) StdoutLine: {'line': b'^\n'}
+[1.893321] (ros2) StdoutLine: {'line': b'\n'}
+[1.893399] (ros2) StdoutLine: {'line': b'./ros2/Publisher.py:12:1: W293 blank line contains whitespace\n'}
+[1.893490] (ros2) StdoutLine: {'line': b'       \n'}
+[1.893575] (ros2) StdoutLine: {'line': b'^\n'}
+[1.893667] (ros2) StdoutLine: {'line': b'\n'}
+[1.893750] (ros2) StdoutLine: {'line': b'./ros2/Publisher.py:21:20: W291 trailing whitespace\n'}
+[1.893839] (ros2) StdoutLine: {'line': b'            String, \n'}
+[1.893983] (ros2) StdoutLine: {'line': b'                   ^\n'}
+[1.894418] (ros2) StdoutLine: {'line': b'\n'}
+[1.894606] (ros2) StdoutLine: {'line': b'./ros2/Publisher.py:33:17: E225 missing whitespace around operator\n'}
+[1.894784] (ros2) StdoutLine: {'line': b"        msg.data= 'robot'\n"}
+[1.895304] (ros2) StdoutLine: {'line': b'                ^\n'}
+[1.895569] (ros2) StdoutLine: {'line': b'\n'}
+[1.895773] (ros2) StdoutLine: {'line': b'./ros2/Publisher.py:36:1: E302 expected 2 blank lines, found 1\n'}
+[1.896011] (ros2) StdoutLine: {'line': b'def main(args=None):\n'}
+[1.896219] (ros2) StdoutLine: {'line': b'^\n'}
+[1.896418] (ros2) StdoutLine: {'line': b'\n'}
+[1.896625] (ros2) StdoutLine: {'line': b'./ros2/Publisher.py:43:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[1.896883] (ros2) StdoutLine: {'line': b"if __name__ == '__main__':\n"}
+[1.897176] (ros2) StdoutLine: {'line': b'^\n'}
+[1.897469] (ros2) StdoutLine: {'line': b'\n'}
+[1.897757] (ros2) StdoutLine: {'line': b'./ros2/Publisher.py:45:1: W391 blank line at end of file\n'}
+[1.897968] (ros2) StdoutLine: {'line': b'\n'}
+[1.898170] (ros2) StdoutLine: {'line': b'^\n'}
+[1.898358] (ros2) StdoutLine: {'line': b'\n'}
+[1.898561] (ros2) StdoutLine: {'line': b"./ros2/Suscribe.py:4:1: I100 Import statements are in the wrong order. 'from rclpy.qos import HistoryPolicy' should be before 'from rclpy.qos import ReliabilityPolicy'\n"}
+[1.898791] (ros2) StdoutLine: {'line': b'from rclpy.qos import HistoryPolicy\n'}
+[1.899032] (ros2) StdoutLine: {'line': b'^\n'}
+[1.899218] (ros2) StdoutLine: {'line': b'\n'}
+[1.899475] (ros2) StdoutLine: {'line': b"./ros2/Suscribe.py:5:1: I100 Import statements are in the wrong order. 'from rclpy.qos import DurabilityPolicy' should be before 'from rclpy.qos import HistoryPolicy'\n"}
+[1.899757] (ros2) StdoutLine: {'line': b'from rclpy.qos import DurabilityPolicy\n'}
+[1.899965] (ros2) StdoutLine: {'line': b'^\n'}
+[1.900213] (ros2) StdoutLine: {'line': b'\n'}
+[1.900357] (ros2) StdoutLine: {'line': b"./ros2/Suscribe.py:6:1: I100 Import statements are in the wrong order. 'from rclpy.node import Node' should be before 'from rclpy.qos import DurabilityPolicy'\n"}
+[1.900532] (ros2) StdoutLine: {'line': b'from rclpy.node import Node\n'}
+[1.900643] (ros2) StdoutLine: {'line': b'^\n'}
+[1.900882] (ros2) StdoutLine: {'line': b'\n'}
+[1.901202] (ros2) StdoutLine: {'line': b'./ros2/Suscribe.py:9:1: E302 expected 2 blank lines, found 1\n'}
+[1.901466] (ros2) StdoutLine: {'line': b'class Suscribe(Node):\n'}
+[1.901758] (ros2) StdoutLine: {'line': b'^\n'}
+[1.902061] (ros2) StdoutLine: {'line': b'\n'}
+[1.902310] (ros2) StdoutLine: {'line': b'./ros2/Suscribe.py:12:1: W293 blank line contains whitespace\n'}
+[1.902599] (ros2) StdoutLine: {'line': b'        \n'}
+[1.902783] (ros2) StdoutLine: {'line': b'^\n'}
+[1.902925] (ros2) StdoutLine: {'line': b'\n'}
+[1.903111] (ros2) StdoutLine: {'line': b'./ros2/Suscribe.py:14:9: E303 too many blank lines (2)\n'}
+[1.903284] (ros2) StdoutLine: {'line': b'        qos_self = QoSProfile(\n'}
+[1.903420] (ros2) StdoutLine: {'line': b'        ^\n'}
+[1.903534] (ros2) StdoutLine: {'line': b'\n'}
+[1.903666] (ros2) StdoutLine: {'line': b'./ros2/Suscribe.py:15:24: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.903802] (ros2) StdoutLine: {'line': b'            reliability = ReliabilityPolicy.BEST_AVAILABLE,\n'}
+[1.903914] (ros2) StdoutLine: {'line': b'                       ^\n'}
+[1.904006] (ros2) StdoutLine: {'line': b'\n'}
+[1.904097] (ros2) StdoutLine: {'line': b'./ros2/Suscribe.py:15:26: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.904198] (ros2) StdoutLine: {'line': b'            reliability = ReliabilityPolicy.BEST_AVAILABLE,\n'}
+[1.904299] (ros2) StdoutLine: {'line': b'                         ^\n'}
+[1.904390] (ros2) StdoutLine: {'line': b'\n'}
+[1.904484] (ros2) StdoutLine: {'line': b'./ros2/Suscribe.py:16:20: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.904609] (ros2) StdoutLine: {'line': b'            history = HistoryPolicy.KEEP_LAST,\n'}
+[1.904700] (ros2) StdoutLine: {'line': b'                   ^\n'}
+[1.904793] (ros2) StdoutLine: {'line': b'\n'}
+[1.904886] (ros2) StdoutLine: {'line': b'./ros2/Suscribe.py:16:22: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.905101] (ros2) StdoutLine: {'line': b'            history = HistoryPolicy.KEEP_LAST,\n'}
+[1.905363] (ros2) StdoutLine: {'line': b'                     ^\n'}
+[1.905632] (ros2) StdoutLine: {'line': b'\n'}
+[1.905879] (ros2) StdoutLine: {'line': b'./ros2/Suscribe.py:17:23: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.906120] (ros2) StdoutLine: {'line': b'            durability = DurabilityPolicy.VOLATILE,\n'}
+[1.906393] (ros2) StdoutLine: {'line': b'                      ^\n'}
+[1.906559] (ros2) StdoutLine: {'line': b'\n'}
+[1.906794] (ros2) StdoutLine: {'line': b'./ros2/Suscribe.py:17:25: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.907316] (ros2) StdoutLine: {'line': b'            durability = DurabilityPolicy.VOLATILE,\n'}
+[1.907502] (ros2) StdoutLine: {'line': b'                        ^\n'}
+[1.907612] (ros2) StdoutLine: {'line': b'\n'}
+[1.907727] (ros2) StdoutLine: {'line': b'./ros2/Suscribe.py:18:18: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.907835] (ros2) StdoutLine: {'line': b'            depth = 5,\n'}
+[1.907944] (ros2) StdoutLine: {'line': b'                 ^\n'}
+[1.908046] (ros2) StdoutLine: {'line': b'\n'}
+[1.908149] (ros2) StdoutLine: {'line': b'./ros2/Suscribe.py:18:20: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.908249] (ros2) StdoutLine: {'line': b'            depth = 5,\n'}
+[1.908351] (ros2) StdoutLine: {'line': b'                   ^\n'}
+[1.908817] (ros2) StdoutLine: {'line': b'\n'}
+[1.908914] (ros2) StdoutLine: {'line': b'./ros2/Suscribe.py:33:1: E302 expected 2 blank lines, found 1\n'}
+[1.909064] (ros2) StdoutLine: {'line': b'def main(args=None):\n'}
+[1.909315] (ros2) StdoutLine: {'line': b'^\n'}
+[1.909417] (ros2) StdoutLine: {'line': b'\n'}
+[1.909532] (ros2) StdoutLine: {'line': b'./ros2/Suscribe.py:43:1: W391 blank line at end of file\n'}
+[1.909632] (ros2) StdoutLine: {'line': b'\n'}
+[1.909759] (ros2) StdoutLine: {'line': b'^\n'}
+[1.909903] (ros2) StdoutLine: {'line': b'\n'}
+[1.910008] (ros2) StdoutLine: {'line': b'1     E225 missing whitespace around operator\n'}
+[1.910375] (ros2) StdoutLine: {'line': b'8     E251 unexpected spaces around keyword / parameter equals\n'}
+[1.910802] (-) TimerEvent: {}
+[1.910921] (ros2) StdoutLine: {'line': b'4     E302 expected 2 blank lines, found 1\n'}
+[1.911165] (ros2) StdoutLine: {'line': b'1     E303 too many blank lines (2)\n'}
+[1.911395] (ros2) StdoutLine: {'line': b'1     E305 expected 2 blank lines after class or function definition, found 1\n'}
+[1.911518] (ros2) StdoutLine: {'line': b"6     I100 Import statements are in the wrong order. 'from rclpy.qos import HistoryPolicy' should be before 'from rclpy.qos import ReliabilityPolicy'\n"}
+[1.911587] (ros2) StdoutLine: {'line': b'1     W291 trailing whitespace\n'}
+[1.911650] (ros2) StdoutLine: {'line': b'2     W293 blank line contains whitespace\n'}
+[1.911711] (ros2) StdoutLine: {'line': b'2     W391 blank line at end of file\n'}
+[1.911772] (ros2) StdoutLine: {'line': b'\n'}
+[1.911980] (ros2) StdoutLine: {'line': b'7 files checked\n'}
+[1.912196] (ros2) StdoutLine: {'line': b'26 errors\n'}
+[1.912384] (ros2) StdoutLine: {'line': b'\n'}
+[1.912635] (ros2) StdoutLine: {'line': b"'E'-type errors: 15\n"}
+[1.912877] (ros2) StdoutLine: {'line': b"'I'-type errors: 6\n"}
+[1.913099] (ros2) StdoutLine: {'line': b"'W'-type errors: 5\n"}
+[1.913324] (ros2) StdoutLine: {'line': b'\n'}
+[1.913406] (ros2) StdoutLine: {'line': b'Checked files:\n'}
+[1.913473] (ros2) StdoutLine: {'line': b'\n'}
+[1.913534] (ros2) StdoutLine: {'line': b'* ./setup.py\n'}
+[1.913593] (ros2) StdoutLine: {'line': b'* ./ros2/__init__.py\n'}
+[1.913652] (ros2) StdoutLine: {'line': b'* ./ros2/Suscribe.py\n'}
+[1.913711] (ros2) StdoutLine: {'line': b'* ./ros2/Publisher.py\n'}
+[1.913785] (ros2) StdoutLine: {'line': b'* ./test/test_copyright.py\n'}
+[1.913981] (ros2) StdoutLine: {'line': b'* ./test/test_pep257.py\n'}
+[1.914178] (ros2) StdoutLine: {'line': b'* ./test/test_flake8.py\n'}
+[1.914317] (ros2) StdoutLine: {'line': b'------- generated xml file: /home/mei/ros/ros2_ws/build/ros2/pytest.xml --------\n'}
+[1.914386] (ros2) StdoutLine: {'line': b'=========================== short test summary info ============================\n'}
+[1.914448] (ros2) StdoutLine: {'line': b'FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 26 code style...\n'}
+[1.914509] (ros2) StdoutLine: {'line': b'==================== 1 failed, 1 passed, 1 skipped in 0.52s ====================\n'}
+[2.000684] (ros2) CommandEnded: {'returncode': 1}
+[2.001596] (ros2) TestFailure: {'identifier': 'ros2'}
+[2.001684] (ros2) JobEnded: {'identifier': 'ros2', 'rc': 0}
+[2.002938] (-) EventReactorShutdown: {}

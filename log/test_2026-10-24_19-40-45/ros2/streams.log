@@ -1,0 +1,15 @@
+[0.676s] Invoking command in '/home/mei/ros/ros2_ws/src/ros2': AMENT_PREFIX_PATH=/home/mei/ros/ros2_ws/install/ros2:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/mei/ros/ros2_ws/build/ros2/pytest.xml --junit-prefix=ros2 -o cache_dir=/home/mei/ros/ros2_ws/build/ros2/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/mei/ros/ros2_ws/install/ros2/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[1.453s] ============================= test session starts ==============================
+[1.453s] platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+[1.454s] cachedir: /home/mei/ros/ros2_ws/build/ros2/.pytest_cache
+[1.454s] rootdir: /home/mei/ros/ros2_ws/src/ros2
+[1.455s] plugins: ament-lint-0.17.5, launch-testing-ros-0.26.13, ament-copyright-0.17.5, ament-pep257-0.17.5, launch-testing-3.4.12, ament-xmllint-0.17.5, ament-flake8-0.17.5, colcon-core-0.21.3, cov-4.1.0
+[1.456s] collected 3 items
+[1.456s] 
+[1.466s] test/test_copyright.py s                                                 [ 33%]
+[1.713s] test/test_flake8.py .                                                    [ 66%]
+[1.736s] test/test_pep257.py .                                                    [100%]
+[1.736s] 
+[1.736s] ------- generated xml file: /home/mei/ros/ros2_ws/build/ros2/pytest.xml --------
+[1.737s] ========================= 2 passed, 1 skipped in 0.51s =========================
+[1.860s] Invoked command in '/home/mei/ros/ros2_ws/src/ros2' returned '0': AMENT_PREFIX_PATH=/home/mei/ros/ros2_ws/install/ros2:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/mei/ros/ros2_ws/build/ros2/pytest.xml --junit-prefix=ros2 -o cache_dir=/home/mei/ros/ros2_ws/build/ros2/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/mei/ros/ros2_ws/install/ros2/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest

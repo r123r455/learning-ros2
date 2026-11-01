@@ -1,0 +1,99 @@
+[0.790s] Invoking command in '/home/mei/ros/ros2_ws/src/ros2': AMENT_PREFIX_PATH=/home/mei/ros/ros2_ws/install/ros2:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/mei/ros/ros2_ws/build/ros2/pytest.xml --junit-prefix=ros2 -o cache_dir=/home/mei/ros/ros2_ws/build/ros2/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/mei/ros/ros2_ws/install/ros2/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[2.167s] ============================= test session starts ==============================
+[2.167s] platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+[2.168s] cachedir: /home/mei/ros/ros2_ws/build/ros2/.pytest_cache
+[2.168s] rootdir: /home/mei/ros/ros2_ws/src/ros2
+[2.168s] plugins: ament-lint-0.17.5, launch-testing-ros-0.26.13, ament-copyright-0.17.5, ament-pep257-0.17.5, launch-testing-3.4.12, ament-xmllint-0.17.5, ament-flake8-0.17.5, colcon-core-0.21.3, cov-4.1.0
+[2.168s] collected 3 items
+[2.168s] 
+[2.184s] test/test_copyright.py s                                                 [ 33%]
+[2.685s] test/test_flake8.py F                                                    [ 66%]
+[2.733s] test/test_pep257.py .                                                    [100%]
+[2.734s] 
+[2.734s] =================================== FAILURES ===================================
+[2.734s] _________________________________ test_flake8 __________________________________
+[2.734s] test/test_flake8.py:23: in test_flake8
+[2.734s]     assert rc == 0, \
+[2.735s] E   AssertionError: Found 10 code style errors / warnings:
+[2.735s] E     ./ros2/Publisher.py:4:1: I100 Import statements are in the wrong order. 'from rclpy.qos import HistoryPolicy' should be before 'from rclpy.qos import ReliabilityPolicy'
+[2.735s] E     ./ros2/Publisher.py:5:1: I100 Import statements are in the wrong order. 'from rclpy.qos import DurabilityPolicy' should be before 'from rclpy.qos import HistoryPolicy'
+[2.735s] E     ./ros2/Publisher.py:6:1: I100 Import statements are in the wrong order. 'from rclpy.node import Node' should be before 'from rclpy.qos import DurabilityPolicy'
+[2.735s] E     ./ros2/Publisher.py:9:1: E302 expected 2 blank lines, found 1
+[2.735s] E     ./ros2/Publisher.py:12:1: W293 blank line contains whitespace
+[2.736s] E     ./ros2/Publisher.py:21:20: W291 trailing whitespace
+[2.736s] E     ./ros2/Publisher.py:33:17: E225 missing whitespace around operator
+[2.736s] E     ./ros2/Publisher.py:36:1: E302 expected 2 blank lines, found 1
+[2.736s] E     ./ros2/Publisher.py:43:1: E305 expected 2 blank lines after class or function definition, found 1
+[2.736s] E     ./ros2/Publisher.py:45:1: W391 blank line at end of file
+[2.737s] E   assert 1 == 0
+[2.737s] ----------------------------- Captured stdout call -----------------------------
+[2.737s] 
+[2.737s] ./ros2/Publisher.py:4:1: I100 Import statements are in the wrong order. 'from rclpy.qos import HistoryPolicy' should be before 'from rclpy.qos import ReliabilityPolicy'
+[2.738s] from rclpy.qos import HistoryPolicy
+[2.738s] ^
+[2.738s] 
+[2.738s] ./ros2/Publisher.py:5:1: I100 Import statements are in the wrong order. 'from rclpy.qos import DurabilityPolicy' should be before 'from rclpy.qos import HistoryPolicy'
+[2.739s] from rclpy.qos import DurabilityPolicy
+[2.739s] ^
+[2.739s] 
+[2.740s] ./ros2/Publisher.py:6:1: I100 Import statements are in the wrong order. 'from rclpy.node import Node' should be before 'from rclpy.qos import DurabilityPolicy'
+[2.740s] from rclpy.node import Node
+[2.740s] ^
+[2.740s] 
+[2.741s] ./ros2/Publisher.py:9:1: E302 expected 2 blank lines, found 1
+[2.741s] class Publisher(Node):
+[2.742s] ^
+[2.742s] 
+[2.742s] ./ros2/Publisher.py:12:1: W293 blank line contains whitespace
+[2.743s]        
+[2.743s] ^
+[2.745s] 
+[2.746s] ./ros2/Publisher.py:21:20: W291 trailing whitespace
+[2.748s]             String, 
+[2.748s]                    ^
+[2.749s] 
+[2.749s] ./ros2/Publisher.py:33:17: E225 missing whitespace around operator
+[2.749s]         msg.data= 'robot'
+[2.750s]                 ^
+[2.750s] 
+[2.750s] ./ros2/Publisher.py:36:1: E302 expected 2 blank lines, found 1
+[2.750s] def main(args=None):
+[2.750s] ^
+[2.751s] 
+[2.751s] ./ros2/Publisher.py:43:1: E305 expected 2 blank lines after class or function definition, found 1
+[2.751s] if __name__ == '__main__':
+[2.751s] ^
+[2.751s] 
+[2.752s] ./ros2/Publisher.py:45:1: W391 blank line at end of file
+[2.752s] 
+[2.752s] ^
+[2.752s] 
+[2.752s] 1     E225 missing whitespace around operator
+[2.753s] 2     E302 expected 2 blank lines, found 1
+[2.753s] 1     E305 expected 2 blank lines after class or function definition, found 1
+[2.753s] 3     I100 Import statements are in the wrong order. 'from rclpy.qos import HistoryPolicy' should be before 'from rclpy.qos import ReliabilityPolicy'
+[2.753s] 1     W291 trailing whitespace
+[2.753s] 1     W293 blank line contains whitespace
+[2.754s] 1     W391 blank line at end of file
+[2.754s] 
+[2.754s] 7 files checked
+[2.754s] 10 errors
+[2.754s] 
+[2.754s] 'E'-type errors: 4
+[2.755s] 'I'-type errors: 3
+[2.755s] 'W'-type errors: 3
+[2.755s] 
+[2.755s] Checked files:
+[2.755s] 
+[2.755s] * ./setup.py
+[2.755s] * ./ros2/__init__.py
+[2.756s] * ./ros2/Suscribe.py
+[2.756s] * ./ros2/Publisher.py
+[2.756s] * ./test/test_copyright.py
+[2.756s] * ./test/test_pep257.py
+[2.756s] * ./test/test_flake8.py
+[2.757s] ------- generated xml file: /home/mei/ros/ros2_ws/build/ros2/pytest.xml --------
+[2.757s] =========================== short test summary info ============================
+[2.757s] FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 10 code style...
+[2.758s] ==================== 1 failed, 1 passed, 1 skipped in 0.91s ====================
+[2.873s] Invoked command in '/home/mei/ros/ros2_ws/src/ros2' returned '1': AMENT_PREFIX_PATH=/home/mei/ros/ros2_ws/install/ros2:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/mei/ros/ros2_ws/build/ros2/pytest.xml --junit-prefix=ros2 -o cache_dir=/home/mei/ros/ros2_ws/build/ros2/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/mei/ros/ros2_ws/install/ros2/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
