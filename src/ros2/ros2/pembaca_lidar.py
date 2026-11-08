@@ -1,86 +1,101 @@
-
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Float32, String
-import time
+from sensor_msgs.msg import LaserScan
+from std_msgs.msg import Float32MultiArray
+import math
 
 
-class KontrolRobot(Node):
+class PembacaLidar(Node):
+
     def __init__(self):
-        super().__init__('kontrol_robot')
+        super().__init__('pembaca_lidar')
 
-        self.jarak = None
-        self.waktu_data_terakhir = None
-
-        # Menerima data jarak
         self.subscription = self.create_subscription(
-            Float32,
-            '/jarak',
-            self.callback_jarak,
+            LaserScan,
+            '/scan',
+            self.callback_lidar,
             10
         )
 
-        # Mengirim perintah ke node motor
-        self.publisher_motor = self.create_publisher(
-            String,
-            '/perintah_motor',
+        self.publisher_lidar = self.create_publisher(
+            Float32MultiArray,
+            '/data_lidar',
             10
         )
 
-        # Memeriksa kondisi setiap 0,1 detik
-        self.timer = self.create_timer(
-            0.1,
-            self.cek_rintangan
-        )
-        
+        self.get_logger().info('Pembaca LiDAR siap')
 
-    def callback_jarak(self, msg):
-        self.jarak = msg.data
-        self.waktu_data_terakhir = time.monotonic()
+    def cari_jarak_sektor(self, msg, sudut_tujuan):
 
-    def cek_rintangan(self):
-        pesan = String()
+        jarak_valid = []
+        setengah_sektor = math.radians(15)
 
-        # Periksa apakah data pernah diterima
-        if self.waktu_data_terakhir is None :
-            pesan.data = 'BERHENTI'
+        for indeks, jarak in enumerate(msg.ranges):
 
-        else:
-            # Hitung umur data sensor
-            waktu_sekarang = time.monotonic()
-
-            selisih_waktu = (
-                waktu_sekarang - self.waktu_data_terakhir
+            sudut = (
+                msg.angle_min
+                + indeks * msg.angle_increment
             )
 
-            # Periksa apakah data sudah kedaluwarsa
-            if selisih_waktu > 1.5:
-                pesan.data = 'BERHENTI'
+            selisih = math.atan2(
+                math.sin(sudut - sudut_tujuan),
+                math.cos(sudut - sudut_tujuan)
+            )
 
-            # Data masih baru, periksa jarak
-            elif self.jarak < 0.5:
-                pesan.data = 'BERHENTI'
+            if abs(selisih) <= setengah_sektor:
 
-            else:
-                pesan.data = 'MAJU'
+                if (
+                    math.isfinite(jarak)
+                    and msg.range_min <= jarak <= msg.range_max
+                ):
+                    jarak_valid.append(jarak)
 
-        # Kirim perintah ke node motor
-        self.publisher_motor.publish(pesan)
+        if not jarak_valid:
+            return float('nan')
+
+        return min(jarak_valid)
+
+    def callback_lidar(self, msg):
+
+        depan = self.cari_jarak_sektor(
+            msg, math.radians(0)
+        )
+
+        kiri = self.cari_jarak_sektor(
+            msg, math.radians(90)
+        )
+
+        kanan = self.cari_jarak_sektor(
+            msg, math.radians(-90)
+        )
+
+        pesan = Float32MultiArray()
+        pesan.data = [depan, kiri, kanan]
+
+        self.publisher_lidar.publish(pesan)
 
         self.get_logger().info(
-            f'Jarak: {self.jarak} | '
-            f'Perintah: {pesan.data}'
+            f'Depan: {depan:.2f} | '
+            f'Kiri: {kiri:.2f} | '
+            f'Kanan: {kanan:.2f}'
         )
 
 
 def main(args=None):
+
     rclpy.init(args=args)
-    node = KontrolRobot()
 
-    rclpy.spin(node)
+    node = PembacaLidar()
 
-    node.destroy_node()
-    rclpy.shutdown()
+    try:
+        rclpy.spin(node)
+
+    except KeyboardInterrupt:
+        pass
+
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
 
 
 if __name__ == '__main__':

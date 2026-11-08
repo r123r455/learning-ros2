@@ -24,13 +24,9 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'node_pertama = ros2.Publisher:main',
-            'node_kedua = ros2.Suscribe:main',
-            'lidar_tr = ros2.lidar:main',
             'lidar_rx = ros2.pembaca_lidar:main',
             'node_motor = ros2.node_motor:main',
-            'fsm_robot = ros2.fsm_robot:main',
-            'action_robot = ros2.action_robot:main',
+            'navigasi_robot = ros2.navigasi_robot:main',
         ],
     },
 )

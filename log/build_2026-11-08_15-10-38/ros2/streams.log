@@ -1,0 +1,29 @@
+[1.174s] Invoking command in '/home/mei/learningros2/learning-ros2/src/ros2': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mei/learningros2/learning-ros2/build/ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mei/learningros2/learning-ros2/install/ros2/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros2 build --build-base /home/mei/learningros2/learning-ros2/build/ros2/build install --record /home/mei/learningros2/learning-ros2/build/ros2/install.log --install-scripts $base/lib/ros2 --single-version-externally-managed install_data
+[1.481s] running egg_info
+[1.501s] writing ../../build/ros2/ros2.egg-info/PKG-INFO
+[1.501s] writing dependency_links to ../../build/ros2/ros2.egg-info/dependency_links.txt
+[1.501s] writing entry points to ../../build/ros2/ros2.egg-info/entry_points.txt
+[1.501s] writing requirements to ../../build/ros2/ros2.egg-info/requires.txt
+[1.502s] writing top-level names to ../../build/ros2/ros2.egg-info/top_level.txt
+[1.544s] reading manifest file '../../build/ros2/ros2.egg-info/SOURCES.txt'
+[1.544s] writing manifest file '../../build/ros2/ros2.egg-info/SOURCES.txt'
+[1.544s] running build
+[1.545s] running build_py
+[1.545s] copying ros2/pembaca_lidar.py -> /home/mei/learningros2/learning-ros2/build/ros2/build/lib/ros2
+[1.545s] copying ros2/navigasi_robot.py -> /home/mei/learningros2/learning-ros2/build/ros2/build/lib/ros2
+[1.545s] running install
+[1.552s] running install_lib
+[1.572s] copying /home/mei/learningros2/learning-ros2/build/ros2/build/lib/ros2/pembaca_lidar.py -> /home/mei/learningros2/learning-ros2/install/ros2/lib/python3.12/site-packages/ros2
+[1.572s] copying /home/mei/learningros2/learning-ros2/build/ros2/build/lib/ros2/navigasi_robot.py -> /home/mei/learningros2/learning-ros2/install/ros2/lib/python3.12/site-packages/ros2
+[1.573s] byte-compiling /home/mei/learningros2/learning-ros2/install/ros2/lib/python3.12/site-packages/ros2/pembaca_lidar.py to pembaca_lidar.cpython-312.pyc
+[1.574s] byte-compiling /home/mei/learningros2/learning-ros2/install/ros2/lib/python3.12/site-packages/ros2/navigasi_robot.py to navigasi_robot.cpython-312.pyc
+[1.575s] running install_data
+[1.575s] running install_egg_info
+[1.596s] removing '/home/mei/learningros2/learning-ros2/install/ros2/lib/python3.12/site-packages/ros2-0.0.0-py3.12.egg-info' (and everything under it)
+[1.597s] Copying ../../build/ros2/ros2.egg-info to /home/mei/learningros2/learning-ros2/install/ros2/lib/python3.12/site-packages/ros2-0.0.0-py3.12.egg-info
+[1.598s] running install_scripts
+[1.733s] Installing lidar_rx script to /home/mei/learningros2/learning-ros2/install/ros2/lib/ros2
+[1.733s] Installing navigasi_robot script to /home/mei/learningros2/learning-ros2/install/ros2/lib/ros2
+[1.733s] Installing node_motor script to /home/mei/learningros2/learning-ros2/install/ros2/lib/ros2
+[1.733s] writing list of installed files to '/home/mei/learningros2/learning-ros2/build/ros2/install.log'
+[1.764s] Invoked command in '/home/mei/learningros2/learning-ros2/src/ros2' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mei/learningros2/learning-ros2/build/ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mei/learningros2/learning-ros2/install/ros2/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros2 build --build-base /home/mei/learningros2/learning-ros2/build/ros2/build install --record /home/mei/learningros2/learning-ros2/build/ros2/install.log --install-scripts $base/lib/ros2 --single-version-externally-managed install_data

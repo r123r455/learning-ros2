@@ -1,8 +1,4 @@
 [console_scripts]
-action_robot = ros2.action_robot:main
-fsm_robot = ros2.fsm_robot:main
 lidar_rx = ros2.pembaca_lidar:main
-lidar_tr = ros2.lidar:main
-node_kedua = ros2.Suscribe:main
+navigasi_robot = ros2.navigasi_robot:main
 node_motor = ros2.node_motor:main
-node_pertama = ros2.Publisher:main
